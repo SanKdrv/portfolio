@@ -134,6 +134,36 @@
           <ul class="tags">
             <li>Python</li><li>FastAPI</li><li>LLM</li><li>Pydantic</li><li>Docker</li>
           </ul>
+
+          <details class="sub">
+            <summary>
+              <span class="sub-title">Как устроено</span>
+              <span class="sub-hint">guard против выдуманных характеристик</span>
+            </summary>
+            <ul class="sub-list">
+              <li>
+                <span class="sub-term">Вход и факты</span>
+                <span>Pydantic-валидация, нормализация чисел, единиц и кодов: <code>1,6 МПа</code> и <code>1,6 бар</code> — разные факты.</span>
+              </li>
+              <li>
+                <span class="sub-term">Генерация</span>
+                <span>Промпт по JSON-схеме и любой OpenAI-совместимый API — без LangChain и SDK провайдеров, только <code>chat/completions</code>.</span>
+              </li>
+              <li>
+                <span class="sub-term">Guard</span>
+                <span>Проверяет новые числа, пары «число + единица», коды (IP65, RS-485), полноту характеристик, отрицания и маркеры свойств.</span>
+              </li>
+              <li>
+                <span class="sub-term">Повтор и деградация</span>
+                <span>Модель получает список замечаний и переписывает; после второй неудачи — безопасный шаблон с <code>fallback_used</code>.</span>
+              </li>
+              <li>
+                <span class="sub-term">Инфраструктура</span>
+                <span>Docker, CLI, веб-форма, 253 теста и покрытие 92%, лимиты: 4 параллельные генерации и 60 запросов/мин на IP.</span>
+              </li>
+            </ul>
+          </details>
+
           <a class="card-link" href="https://github.com/SanKdrv/cardgen" target="_blank" rel="noopener">Открыть репозиторий →</a>
         </article>
 

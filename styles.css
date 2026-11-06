@@ -206,6 +206,7 @@ h2 { margin: 0; font-size: clamp(24px, 3vw, 32px); letter-spacing: -.01em; }
 }
 
 .badge--live { color: #06281c; background: var(--ok); }
+.badge--pet { color: #d7e3f5; background: #24344d; }
 .badge--private { color: #c9d4e3; background: #243044; }
 
 .lang { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 12.5px; }

@@ -31,7 +31,7 @@
       </div>
       <dl class="stats">
         <div><dt>2,5 года</dt><dd>коммерческий опыт</dd></div>
-        <div><dt>15+</dt><dd>проектов в GitHub</dd></div>
+        <div><dt>14</dt><dd>проектов в GitHub и GitLab</dd></div>
         <div><dt>Python · Go</dt><dd>основной стек</dd></div>
       </dl>
     </div>
@@ -46,7 +46,6 @@
           <button class="chip" data-filter="ai" role="tab" aria-selected="false">AI / LLM</button>
           <button class="chip" data-filter="backend" role="tab" aria-selected="false">Backend</button>
           <button class="chip" data-filter="web" role="tab" aria-selected="false">Web</button>
-          <button class="chip" data-filter="study" role="tab" aria-selected="false">Учёба</button>
         </div>
       </div>
 
@@ -75,21 +74,76 @@
              gRPC/protobuf, PostgreSQL, Vue 3 на фронте, Docker и GitLab CI/CD.
              Проектировал схему хранения, API-шлюз, авторизацию, заказы, торги, оплату и чат.</p>
           <ul class="tags">
-            <li>Go</li><li>gRPC</li><li>PostgreSQL</li><li>Vue 3</li><li>GitLab CI</li>
+            <li>Go</li><li>gRPC</li><li>PostgreSQL</li><li>Nuxt 3</li><li>GitLab CI</li>
           </ul>
+
+          <details class="sub">
+            <summary>12 репозиториев: веб, админка и сервисы</summary>
+            <ul class="sub-list">
+              <li>
+                <a href="https://gitlab.com/parwork1/parwork-web" target="_blank" rel="noopener">parwork-web</a>
+                <span>Публичное приложение маркетплейса: Nuxt 3 + TypeScript, гибридный рендеринг ради SEO.</span>
+              </li>
+              <li>
+                <a href="https://gitlab.com/parwork1/parwork-admin" target="_blank" rel="noopener">parwork-admin</a>
+                <span>Админ-панель: Vue 3 SPA на Vite + TypeScript, доступ по роли ADMIN.</span>
+              </li>
+              <li>
+                <a href="https://gitlab.com/parwork1/api-gateway" target="_blank" rel="noopener">api-gateway</a>
+                <span>Единая точка входа: REST/JSON и WebSocket, проверка аутентификации, маршрутизация к сервисам.</span>
+              </li>
+              <li>
+                <a href="https://gitlab.com/parwork1/api-contracts" target="_blank" rel="noopener">api-contracts</a>
+                <span>Единый источник правды по gRPC/Protobuf-контрактам платформы.</span>
+              </li>
+              <li>
+                <a href="https://gitlab.com/parwork1/auth-service" target="_blank" rel="noopener">auth-service</a>
+                <span>gRPC-аутентификация: регистрация, вход, JWT access/refresh и валидация токенов.</span>
+              </li>
+              <li>
+                <a href="https://gitlab.com/parwork1/user-profile-service" target="_blank" rel="noopener">user-profile-service</a>
+                <span>Профили заказчиков и фрилансеров платформы.</span>
+              </li>
+              <li>
+                <a href="https://gitlab.com/parwork1/order-service" target="_blank" rel="noopener">order-service</a>
+                <span>Заказы платформы: создание, статусы и события для других сервисов.</span>
+              </li>
+              <li>
+                <a href="https://gitlab.com/parwork1/bidding-service" target="_blank" rel="noopener">bidding-service</a>
+                <span>Отклики (ставки) фрилансеров: приём, хранение и выдача по заказу; gRPC-first, проекция статуса заказа.</span>
+              </li>
+              <li>
+                <a href="https://gitlab.com/parwork1/catalog-service" target="_blank" rel="noopener">catalog-service</a>
+                <span>Каталог платформы: услуги и категории.</span>
+              </li>
+              <li>
+                <a href="https://gitlab.com/parwork1/payment-service" target="_blank" rel="noopener">payment-service</a>
+                <span>Платежи платформы.</span>
+              </li>
+              <li>
+                <a href="https://gitlab.com/parwork1/chat-service" target="_blank" rel="noopener">chat-service</a>
+                <span>Переписка пользователей платформы.</span>
+              </li>
+              <li>
+                <a href="https://gitlab.com/parwork1/notification-service" target="_blank" rel="noopener">notification-service</a>
+                <span>Уведомления платформы.</span>
+              </li>
+            </ul>
+          </details>
+
           <a class="card-link" href="https://gitlab.com/parwork1" target="_blank" rel="noopener">Открыть на GitLab →</a>
         </article>
 
         <article class="card" data-cat="ai">
           <div class="card-top">
             <h3>hh-autoapply</h3>
-            <span class="badge badge--private">private</span>
+            <span class="badge badge--live">open source</span>
           </div>
           <p>Автоматизация поиска работы: вакансии с hh.ru, Хабра Карьеры и SuperJob, скоринг
              релевантности, письма через LLM, отклики и чтение переписки через Selenium,
              Telegram-бот. Лимиты, паузы, капча и планировщик задач.</p>
           <ul class="tags"><li>Python</li><li>Selenium</li><li>LLM</li><li>SQLite</li><li>Telegram</li></ul>
-          <span class="card-link card-link--muted">Репозиторий — по запросу</span>
+          <a class="card-link" href="https://github.com/SanKdrv/hh-autoapply" target="_blank" rel="noopener">Открыть репозиторий →</a>
         </article>
 
         <article class="card" data-cat="ai">
@@ -180,22 +234,6 @@
           <a class="card-link" href="https://github.com/SanKdrv/tg-web-app-react" target="_blank" rel="noopener">Репозиторий →</a>
         </article>
 
-        <article class="card" data-cat="study">
-          <div class="card-top"><h3>SPBSTU</h3><span class="lang"><i class="dot dot--py"></i>Python</span></div>
-          <p>Лабораторные работы с заочного обучения: алгоритмы, структуры данных
-             и задания по программированию.</p>
-          <ul class="tags"><li>Python</li><li>Алгоритмы</li><li>Учёба</li></ul>
-          <a class="card-link" href="https://github.com/SanKdrv/SPBSTU" target="_blank" rel="noopener">Репозиторий →</a>
-        </article>
-
-        <article class="card" data-cat="study">
-          <div class="card-top"><h3>tasks_computer_science</h3><span class="lang"><i class="dot dot--py"></i>Python</span></div>
-          <p>Сборник учебных задач по computer science: решения и разборы
-             базовых алгоритмических тем.</p>
-          <ul class="tags"><li>Python</li><li>CS</li><li>Учёба</li></ul>
-          <a class="card-link" href="https://github.com/SanKdrv/tasks_computer_science" target="_blank" rel="noopener">Репозиторий →</a>
-        </article>
-
       </div>
     </section>
 
@@ -211,6 +249,29 @@
         Дипломная работа — RAG-система персонализированных рекомендаций
         (retrieval, эмбеддинги, векторный поиск).
       </p>
+    </section>
+
+    <section class="contacts" aria-labelledby="contacts-title">
+      <h2 id="contacts-title">Контакты</h2>
+      <p class="contacts-lead">Открыт к предложениям: backend на Python/Go, AI-интеграции. Отвечаю быстро.</p>
+      <div class="contact-grid">
+        <a class="contact contact--main" href="https://t.me/snkdbuis" target="_blank" rel="noopener">
+          <span class="contact-label">Telegram</span>
+          <span class="contact-value">@snkdbuis</span>
+        </a>
+        <a class="contact" href="mailto:kudryash2005@gmail.com">
+          <span class="contact-label">Почта</span>
+          <span class="contact-value">kudryash2005@gmail.com</span>
+        </a>
+        <a class="contact" href="https://github.com/SanKdrv" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">SanKdrv</span>
+        </a>
+        <a class="contact" href="https://gitlab.com/sanukao" target="_blank" rel="noopener">
+          <span class="contact-label">GitLab</span>
+          <span class="contact-value">sanukao</span>
+        </a>
+      </div>
     </section>
   </main>
 

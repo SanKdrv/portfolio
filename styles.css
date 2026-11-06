@@ -241,6 +241,66 @@ h2 { margin: 0; font-size: clamp(24px, 3vw, 32px); letter-spacing: -.01em; }
 
 .card-link--muted { color: var(--muted); font-weight: 500; }
 
+/* ── вложенные репозитории (ParWork) ───────────────────────────────── */
+
+.sub {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, .02);
+  padding: 0 14px;
+}
+
+.sub summary {
+  cursor: pointer;
+  padding: 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sub summary::-webkit-details-marker { display: none; }
+
+.sub summary::before {
+  content: "▸";
+  color: var(--accent-2);
+  transition: transform .18s ease;
+}
+
+.sub[open] summary::before { transform: rotate(90deg); }
+
+.sub summary:hover { color: var(--accent-2); }
+
+.sub-list {
+  margin: 0 0 12px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.sub-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-left: 16px;
+  border-left: 2px solid var(--line);
+}
+
+.sub-list a {
+  color: var(--accent-2);
+  font-family: ui-monospace, SFMono-Regular, "Cascadia Code", Consolas, monospace;
+  font-size: 13.5px;
+  text-decoration: none;
+}
+
+.sub-list a:hover { text-decoration: underline; }
+
+.sub-list span { color: var(--muted); font-size: 13.5px; }
+
 /* ── о себе и подвал ───────────────────────────────────────────────── */
 
 .about {
@@ -252,6 +312,48 @@ h2 { margin: 0; font-size: clamp(24px, 3vw, 32px); letter-spacing: -.01em; }
 }
 
 .about p { margin: 14px 0 0; color: var(--muted); max-width: 820px; }
+
+/* ── контакты ──────────────────────────────────────────────────────── */
+
+.contacts { margin-top: 56px; }
+
+.contacts-lead { margin: 10px 0 18px; color: var(--muted); }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--card);
+  text-decoration: none;
+  transition: .18s ease;
+}
+
+.contact:hover { background: var(--card-hover); border-color: #2c425c; transform: translateY(-1px); }
+
+.contact--main {
+  border-color: #2b3f5c;
+  background:
+    linear-gradient(140deg, rgba(124, 92, 255, .16), transparent 60%),
+    var(--card);
+}
+
+.contact-label {
+  color: var(--muted);
+  font-size: 12.5px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.contact-value { font-weight: 600; font-size: 15.5px; }
 
 .footer {
   display: flex;

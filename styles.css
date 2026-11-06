@@ -244,22 +244,31 @@ h2 { margin: 0; font-size: clamp(24px, 3vw, 32px); letter-spacing: -.01em; }
 /* ── вложенные репозитории (ParWork) ───────────────────────────────── */
 
 .sub {
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: rgba(255, 255, 255, .02);
-  padding: 0 14px;
+  border: 1px solid rgba(124, 92, 255, .55);
+  border-radius: 14px;
+  background:
+    linear-gradient(135deg, rgba(124, 92, 255, .18), rgba(34, 211, 238, .10) 70%),
+    rgba(255, 255, 255, .02);
+  padding: 0 16px;
+  margin: 4px 0 2px;
+  transition: border-color .18s ease, box-shadow .18s ease;
 }
+
+.sub:hover { border-color: rgba(124, 92, 255, .9); box-shadow: 0 0 0 3px rgba(124, 92, 255, .10); }
+
+.sub[open] { border-color: rgba(124, 92, 255, .9); }
 
 .sub summary {
   cursor: pointer;
-  padding: 12px 0;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text);
+  padding: 15px 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
   list-style: none;
   display: flex;
-  align-items: center;
-  gap: 8px;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .sub summary::-webkit-details-marker { display: none; }
@@ -267,15 +276,25 @@ h2 { margin: 0; font-size: clamp(24px, 3vw, 32px); letter-spacing: -.01em; }
 .sub summary::before {
   content: "▸";
   color: var(--accent-2);
+  font-size: 15px;
   transition: transform .18s ease;
 }
 
 .sub[open] summary::before { transform: rotate(90deg); }
 
-.sub summary:hover { color: var(--accent-2); }
+.sub summary:hover .sub-title { color: var(--accent-2); }
+
+.sub-title { letter-spacing: -.01em; }
+
+.sub-hint {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 12.5px;
+  font-weight: 500;
+}
 
 .sub-list {
-  margin: 0 0 12px;
+  margin: 0 0 14px;
   padding: 0;
   list-style: none;
   display: grid;
@@ -287,7 +306,7 @@ h2 { margin: 0; font-size: clamp(24px, 3vw, 32px); letter-spacing: -.01em; }
   flex-direction: column;
   gap: 2px;
   padding-left: 16px;
-  border-left: 2px solid var(--line);
+  border-left: 2px solid rgba(124, 92, 255, .45);
 }
 
 .sub-list a {

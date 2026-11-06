@@ -3,6 +3,10 @@
 Одностраничный сайт с проектами: статичный HTML/CSS/JS, без сборки и зависимостей.
 Хостится бесплатно на GitHub Pages.
 
+Проекты — с GitHub ([SanKdrv](https://github.com/SanKdrv)) и GitLab
+([sanukao](https://gitlab.com/sanukao), ParWork в группе
+[parwork1](https://gitlab.com/parwork1)).
+
 ## Посмотреть локально
 
 Просто открой `index.html` в браузере. Либо:

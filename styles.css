@@ -321,6 +321,8 @@ h2 { margin: 0; font-size: clamp(24px, 3vw, 32px); letter-spacing: -.01em; }
 
 .sub-list span { color: var(--muted); font-size: 13.5px; }
 
+.sub-term { color: var(--text); font-weight: 600; }
+
 /* ── о себе и подвал ───────────────────────────────────────────────── */
 
 .about {

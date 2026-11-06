@@ -137,15 +137,47 @@
           <a class="card-link" href="https://github.com/SanKdrv/cardgen" target="_blank" rel="noopener">Открыть репозиторий →</a>
         </article>
 
-        <article class="card" data-cat="ai">
+        <article class="card card--featured" data-cat="ai">
           <div class="card-top">
             <h3>hh-autoapply</h3>
             <span class="badge badge--live">open source</span>
           </div>
-          <p>Автоматизация поиска работы: вакансии с hh.ru, Хабра Карьеры и SuperJob, скоринг
-             релевантности, письма через LLM, отклики и чтение переписки через Selenium,
-             Telegram-бот. Лимиты, паузы, капча и планировщик задач.</p>
-          <ul class="tags"><li>Python</li><li>Selenium</li><li>LLM</li><li>SQLite</li><li>Telegram</li></ul>
+          <p>Бот автооткликов: собирает вакансии с hh.ru, Хабра Карьеры и SuperJob, оценивает
+             релевантность, пишет сопроводительные через LLM и отправляет отклики через Selenium.
+             Читает переписку, готовит ответы и присылает всё в Telegram.</p>
+          <ul class="tags">
+            <li>Python</li><li>Selenium</li><li>LLM</li><li>SQLite</li><li>Telegram</li><li>планировщик</li>
+          </ul>
+
+          <details class="sub">
+            <summary>
+              <span class="sub-title">Как устроено</span>
+              <span class="sub-hint">5 модулей и защита от галлюцинаций</span>
+            </summary>
+            <ul class="sub-list">
+              <li>
+                <span class="sub-term">Поиск и скоринг</span>
+                <span>19 поисковых профилей, дедупликация, баллы релевантности и приоритет вакансий с тестовым заданием.</span>
+              </li>
+              <li>
+                <span class="sub-term">Письма через LLM</span>
+                <span>Генерация под вакансию + «страж фактов»: технологии, которых нет в профиле, вырезаются; ответы на скрининговые вопросы.</span>
+              </li>
+              <li>
+                <span class="sub-term">Отправка</span>
+                <span>Selenium: формы, отклики в один клик, досылка письма в чат, лимиты 30 + 25 в день, паузы и капча.</span>
+              </li>
+              <li>
+                <span class="sub-term">Переписка</span>
+                <span>Чтение чатов, черновики ответов, эскалация сложных вопросов человеку, анти-цикл.</span>
+              </li>
+              <li>
+                <span class="sub-term">Надёжность</span>
+                <span>SQLite-состояние, замки на биржу, автоперезапуск браузера, Telegram-алерты и ночной аудит логов.</span>
+              </li>
+            </ul>
+          </details>
+
           <a class="card-link" href="https://github.com/SanKdrv/hh-autoapply" target="_blank" rel="noopener">Открыть репозиторий →</a>
         </article>
 

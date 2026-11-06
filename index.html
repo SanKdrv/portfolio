@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Александр Кудряшов — backend-разработчик (Python, Go, AI)</title>
+  <meta name="description" content="Портфолио backend-разработчика: Python, Go, FastAPI, LLM-интеграции, RAG, микросервисы. Проекты с открытым кодом." />
+  <meta property="og:title" content="Александр Кудряшов — backend-разработчик" />
+  <meta property="og:description" content="Python, Go, FastAPI, LLM-интеграции и RAG. Проекты и открытый код." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">Портфолио · открытый код</p>
+      <h1>Александр Кудряшов</h1>
+      <p class="lead">
+        Backend-разработчик: <strong>Python</strong> и <strong>Go</strong>, сервисы на FastAPI,
+        интеграции с LLM, RAG и микросервисная инфраструктура.
+        Довожу проекты от прототипа до продакшена.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://github.com/SanKdrv" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://t.me/snkdbuis" target="_blank" rel="noopener">Telegram</a>
+        <a class="btn" href="mailto:kudryash2005@gmail.com">Написать</a>
+      </div>
+      <dl class="stats">
+        <div><dt>2,5 года</dt><dd>коммерческий опыт</dd></div>
+        <div><dt>15+</dt><dd>проектов в GitHub</dd></div>
+        <div><dt>Python · Go</dt><dd>основной стек</dd></div>
+      </dl>
+    </div>
+  </header>
+
+  <main class="container">
+    <section aria-labelledby="projects-title">
+      <div class="section-head">
+        <h2 id="projects-title">Проекты</h2>
+        <div class="filters" role="tablist" aria-label="Фильтр по категориям">
+          <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">Все</button>
+          <button class="chip" data-filter="ai" role="tab" aria-selected="false">AI / LLM</button>
+          <button class="chip" data-filter="backend" role="tab" aria-selected="false">Backend</button>
+          <button class="chip" data-filter="web" role="tab" aria-selected="false">Web</button>
+          <button class="chip" data-filter="study" role="tab" aria-selected="false">Учёба</button>
+        </div>
+      </div>
+
+      <div class="grid" id="grid">
+
+        <article class="card card--featured" data-cat="ai">
+          <div class="card-top">
+            <h3>cardgen</h3>
+            <span class="badge badge--live">в проде</span>
+          </div>
+          <p>AI-помощник для карточек товаров КИП: FastAPI + Pydantic v2, любой OpenAI-совместимый API.
+             Главное — детерминированная проверка ответа модели, чтобы она не выдумывала характеристики.
+             253 теста, покрытие 92%, Docker, CLI и веб-форма.</p>
+          <ul class="tags">
+            <li>Python</li><li>FastAPI</li><li>LLM</li><li>Pydantic</li><li>Docker</li>
+          </ul>
+          <a class="card-link" href="https://github.com/SanKdrv/cardgen" target="_blank" rel="noopener">Открыть репозиторий →</a>
+        </article>
+
+        <article class="card" data-cat="ai">
+          <div class="card-top"><h3>panel</h3><span class="lang"><i class="dot dot--py"></i>Python</span></div>
+          <p>Административная панель RAG-системы: Vue 3 на фронте, FastAPI на бэкенде,
+             прокси к RAG API, аутентификация, автоматическая оценка качества и метрики в Prometheus/Grafana.</p>
+          <ul class="tags"><li>Vue 3</li><li>FastAPI</li><li>RAG</li><li>Prometheus</li></ul>
+          <a class="card-link" href="https://github.com/SanKdrv/panel" target="_blank" rel="noopener">Репозиторий →</a>
+        </article>
+
+        <article class="card" data-cat="ai">
+          <div class="card-top"><h3>analytic-system</h3><span class="lang"><i class="dot dot--py"></i>Python</span></div>
+          <p>Аналитика распределённого RAG: FastAPI-бэкенд, Prometheus, Grafana и Vue-интерфейс.
+             Сбор метрик с удалённых node_exporter и живые срезы по качеству RAG-пайплайна.</p>
+          <ul class="tags"><li>FastAPI</li><li>Grafana</li><li>Prometheus</li><li>Vue</li></ul>
+          <a class="card-link" href="https://github.com/SanKdrv/analytic-system" target="_blank" rel="noopener">Репозиторий →</a>
+        </article>
+
+        <article class="card" data-cat="ai">
+          <div class="card-top"><h3>ollama-models-bench</h3><span class="lang"><i class="dot dot--py"></i>Python</span></div>
+          <p>CLI-бенчмарк локальных LLM через Ollama: скачивание моделей, замер метрик,
+             отчёты в Markdown, CSV и JSON. Сборка в один файл через PyInstaller.</p>
+          <ul class="tags"><li>Python</li><li>Ollama</li><li>CLI</li><li>PyInstaller</li></ul>
+          <a class="card-link" href="https://github.com/SanKdrv/ollama-models-bench" target="_blank" rel="noopener">Репозиторий →</a>
+        </article>
+
+        <article class="card" data-cat="ai">
+          <div class="card-top"><h3>Hack0811</h3><span class="lang"><i class="dot dot--py"></i>Python</span></div>
+          <p>Кейс хакатона: автоматическая диспетчеризация заявок первой линии поддержки.
+             Из письма извлекаются тип оборудования, точка отказа и серийный номер — через NLP-модели.</p>
+          <ul class="tags"><li>Python</li><li>NLP</li><li>LLM</li></ul>
+          <a class="card-link" href="https://github.com/SanKdrv/Hack0811" target="_blank" rel="noopener">Репозиторий →</a>
+        </article>
+
+        <article class="card" data-cat="ai">
+          <div class="card-top"><h3>CodeCrushers</h3><span class="lang"><i class="dot dot--none"></i>ML</span></div>
+          <p>Модуль планирования действий для интеллектуальных агентов: по изображению окружения
+             и текстовой команде строится план действий на базе miniGPT4.</p>
+          <ul class="tags"><li>miniGPT4</li><li>Agents</li><li>CV</li></ul>
+          <a class="card-link" href="https://github.com/SanKdrv/CodeCrushers" target="_blank" rel="noopener">Репозиторий →</a>
+        </article>
+
+        <article class="card" data-cat="backend">
+          <div class="card-top"><h3>30-07-2025</h3><span class="lang"><i class="dot dot--go"></i>Go</span></div>
+          <p>Сервис архивации файлов по URL на Go 1.24: задачи на упаковку, ленивая загрузка,
+             статусы и готовые архивы, лимиты на файлы и параллельные задачи, детальные ошибки.</p>
+          <ul class="tags"><li>Go</li><li>REST</li><li>3-Layer</li><li>Docker</li></ul>
+          <a class="card-link" href="https://github.com/SanKdrv/30-07-2025" target="_blank" rel="noopener">Репозиторий →</a>
+        </article>
+
+        <article class="card" data-cat="backend">
+          <div class="card-top"><h3>online-shop</h3><span class="lang"><i class="dot dot--go"></i>Go</span></div>
+          <p>Учебный интернет-магазин на Go с PostgreSQL: слой репозиториев, сервисов и HTTP-роутов,
+             сборка и запуск в Docker Compose.</p>
+          <ul class="tags"><li>Go</li><li>PostgreSQL</li><li>Docker Compose</li></ul>
+          <a class="card-link" href="https://github.com/SanKdrv/online-shop" target="_blank" rel="noopener">Репозиторий →</a>
+        </article>
+
+        <article class="card" data-cat="web">
+          <div class="card-top"><h3>KGx2</h3><span class="lang"><i class="dot dot--py"></i>Python</span></div>
+          <p>Телеграм-бот-советник по криптовалютам: анализирует рынок нейросетью
+             и «алгоритмом Голованова», присылает уведомления пользователю.</p>
+          <ul class="tags"><li>Python</li><li>Telegram Bot</li><li>ML</li></ul>
+          <a class="card-link" href="https://github.com/SanKdrv/KGx2" target="_blank" rel="noopener">Репозиторий →</a>
+        </article>
+
+        <article class="card" data-cat="web">
+          <div class="card-top"><h3>muver</h3><span class="lang"><i class="dot dot--ts"></i>TypeScript</span></div>
+          <p>Музыкальный веб-сервис на Angular: клиентская часть с компонентами,
+             роутингом и сборкой через Angular CLI.</p>
+          <ul class="tags"><li>Angular</li><li>TypeScript</li><li>SPA</li></ul>
+          <a class="card-link" href="https://github.com/SanKdrv/muver" target="_blank" rel="noopener">Репозиторий →</a>
+        </article>
+
+        <article class="card" data-cat="web">
+          <div class="card-top"><h3>Buisnessgram</h3><span class="lang"><i class="dot dot--dart"></i>Dart</span></div>
+          <p>Кроссплатформенное приложение для работы с функционалом Telegram
+             в медиапродвижении: мобильный клиент на Flutter.</p>
+          <ul class="tags"><li>Flutter</li><li>Dart</li><li>Mobile</li></ul>
+          <a class="card-link" href="https://github.com/SanKdrv/Buisnessgram" target="_blank" rel="noopener">Репозиторий →</a>
+        </article>
+
+        <article class="card" data-cat="web">
+          <div class="card-top"><h3>tg-web-app-react</h3><span class="lang"><i class="dot dot--js"></i>JavaScript</span></div>
+          <p>Веб-приложение под Telegram Web App на React: экраны, состояние
+             и сборка через Create React App.</p>
+          <ul class="tags"><li>React</li><li>Telegram WebApp</li><li>JavaScript</li></ul>
+          <a class="card-link" href="https://github.com/SanKdrv/tg-web-app-react" target="_blank" rel="noopener">Репозиторий →</a>
+        </article>
+
+        <article class="card" data-cat="study">
+          <div class="card-top"><h3>SPBSTU</h3><span class="lang"><i class="dot dot--py"></i>Python</span></div>
+          <p>Лабораторные работы с заочного обучения: алгоритмы, структуры данных
+             и задания по программированию.</p>
+          <ul class="tags"><li>Python</li><li>Алгоритмы</li><li>Учёба</li></ul>
+          <a class="card-link" href="https://github.com/SanKdrv/SPBSTU" target="_blank" rel="noopener">Репозиторий →</a>
+        </article>
+
+        <article class="card" data-cat="study">
+          <div class="card-top"><h3>tasks_computer_science</h3><span class="lang"><i class="dot dot--py"></i>Python</span></div>
+          <p>Сборник учебных задач по computer science: решения и разборы
+             базовых алгоритмических тем.</p>
+          <ul class="tags"><li>Python</li><li>CS</li><li>Учёба</li></ul>
+          <a class="card-link" href="https://github.com/SanKdrv/tasks_computer_science" target="_blank" rel="noopener">Репозиторий →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="about" aria-labelledby="about-title">
+      <h2 id="about-title">О себе</h2>
+      <p>
+        Пишу бэкенд на Python и Go: FastAPI-сервисы, Go-микросервисы с gRPC/protobuf,
+        PostgreSQL и ClickHouse, NATS JetStream, Docker и CI/CD. Отдельное направление —
+        интеграции с LLM: вызовы моделей через API, RAG-пайплайны, проверка ответов модели
+        на соответствие фактам. Ежедневно работаю через Claude Code и OpenCode Go.
+      </p>
+      <p>
+        Дипломная работа — RAG-система персонализированных рекомендаций
+        (retrieval, эмбеддинги, векторный поиск).
+      </p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year">2026</span> Александр Кудряшов</p>
+    <p class="muted">Собрано вручную, без конструкторов. Хостинг — GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

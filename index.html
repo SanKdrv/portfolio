@@ -31,25 +31,137 @@
       </div>
       <dl class="stats">
         <div><dt>2,5 года</dt><dd>коммерческий опыт</dd></div>
-        <div><dt>12</dt><dd>проектов в GitHub и GitLab</dd></div>
+        <div><dt>13</dt><dd>проектов в GitHub и GitLab</dd></div>
         <div><dt>Python · Go</dt><dd>основной стек</dd></div>
       </dl>
     </div>
   </header>
 
   <main class="container">
+    <section class="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title">Опыт работы</h2>
+      <p class="experience-lead">2 года 6 месяцев коммерческой разработки: от легаси-миграций до highload-сервисов в проде.</p>
+
+      <ol class="timeline">
+        <li class="job">
+          <div class="job-head">
+            <h3>Fullstack-разработчик</h3>
+            <span class="job-period">авг 2025 — июл 2026</span>
+          </div>
+          <p class="job-company">Shamrock Tech · 1 год</p>
+          <ul class="job-points">
+            <li>Разработал highload Go-микросервис сбора биржевых данных: WebSocket-потоки, батчи, protobuf, запись в NATS.</li>
+            <li>Развернул в проде NATS JetStream и ClickHouse: схема хранения, consumer-таблицы и материализованные представления для аналитики.</li>
+            <li>Написал Python-микросервис оркестрации процессов на кластере серверов: очередь задач, пул воркеров, управление по SSH.</li>
+          </ul>
+          <ul class="job-stack"><li>Go</li><li>Python</li><li>ClickHouse</li><li>NATS</li><li>protobuf</li></ul>
+        </li>
+
+        <li class="job">
+          <div class="job-head">
+            <h3>Программист-инженер 2 категории</h3>
+            <span class="job-period">июн 2024 — июн 2025</span>
+          </div>
+          <p class="job-company">Петрозаводский государственный университет · 1 год 1 месяц</p>
+          <ul class="job-points">
+            <li>Перенёс подсистемы с Oracle Forms 6i в веб — перевёл пользователей с устаревшего десктопного клиента на браузер.</li>
+            <li>Оптимизировал структуру таблиц и запросы Oracle, устранил коллизии данных.</li>
+            <li>Вёл полный цикл fullstack: backend на PHP (Yii2), frontend на JavaScript/jQuery/Bootstrap.</li>
+          </ul>
+          <ul class="job-stack"><li>PHP</li><li>Yii2</li><li>Oracle</li><li>JavaScript</li></ul>
+        </li>
+
+        <li class="job">
+          <div class="job-head">
+            <h3>Backend-разработчик</h3>
+            <span class="job-period">янв 2024 — июл 2024</span>
+          </div>
+          <p class="job-company">Intelektaz · 7 месяцев</p>
+          <ul class="job-points">
+            <li>Разработал и вывел в продакшен микросервис автоматических рассылок и генерации ИИ-постов во ВКонтакте.</li>
+            <li>Автоматизировал тарификацию через cron-джобы — убрал ручную выписку счетов.</li>
+            <li>Настроил Nginx (reverse proxy) на всех микросервисах, оформил API-документацию через Swagger.</li>
+          </ul>
+          <ul class="job-stack"><li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>Redis</li><li>Docker</li></ul>
+        </li>
+      </ol>
+      <h3 class="exp-sub">Проектная работа</h3>
+      <ol class="timeline timeline--projects">
+        <li class="job">
+          <div class="job-head">
+            <h3>Backend-разработчик</h3>
+            <span class="job-period">янв — мар 2026</span>
+          </div>
+          <p class="job-company">ООО «Призматика» · проект</p>
+          <ul class="job-points">
+            <li>Дорабатывал бэкенд Telegram mini app на NestJS: интеграции внешних микросервисов.</li>
+            <li>Генерировал клиентский код из OpenAPI-спецификации через oapi-codegen.</li>
+          </ul>
+          <ul class="job-stack"><li>NestJS</li><li>TypeScript</li><li>OpenAPI</li></ul>
+        </li>
+
+        <li class="job">
+          <div class="job-head">
+            <h3>Backend-разработчик (RAG)</h3>
+            <span class="job-period">сен — дек 2025</span>
+          </div>
+          <p class="job-company">ИОЦ «Мой университет» · проект</p>
+          <ul class="job-points">
+            <li>Разработал и вывел в прод RAG-систему персональных рекомендаций с рассылкой.</li>
+            <li>Собрал пайплайн: Mautic как база пользователей, Qdrant для поиска, Ollama для генерации.</li>
+          </ul>
+          <ul class="job-stack"><li>FastAPI</li><li>Qdrant</li><li>PostgreSQL</li><li>Ollama</li><li>Grafana</li></ul>
+        </li>
+
+        <li class="job">
+          <div class="job-head">
+            <h3>Backend-разработчик</h3>
+            <span class="job-period">янв — май 2025</span>
+          </div>
+          <p class="job-company">ООО «Натлекс» · проект</p>
+          <ul class="job-points">
+            <li>Разработал RAG-систему рекомендаций блюд для сети ресторанов.</li>
+            <li>Бэкенд на FastAPI, фронтенд на Vue 3, генерация через СберGPT API, хранение в PostgreSQL.</li>
+          </ul>
+          <ul class="job-stack"><li>FastAPI</li><li>Vue 3</li><li>СберGPT API</li><li>PostgreSQL</li></ul>
+        </li>
+
+        <li class="job">
+          <div class="job-head">
+            <h3>Python-разработчик</h3>
+            <span class="job-period">апр — май 2024</span>
+          </div>
+          <p class="job-company">ООО «Иду к врачу» · практика СПбПУ</p>
+          <ul class="job-points">
+            <li>Спроектировал схему БД MySQL и объектный слой доступа на SQLAlchemy для чат-бота записи к врачу.</li>
+            <li>Предложил asyncio/aiogram для бота, участвовал в тестировании и защите продукта.</li>
+          </ul>
+          <ul class="job-stack"><li>Python</li><li>aiogram</li><li>SQLAlchemy</li><li>MySQL</li></ul>
+        </li>
+      </ol>
+
+    </section>
+
     <section aria-labelledby="projects-title">
       <div class="section-head">
         <h2 id="projects-title">Проекты</h2>
-        <div class="filters" role="tablist" aria-label="Фильтр по категориям">
-          <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">Все</button>
-          <button class="chip" data-filter="ai" role="tab" aria-selected="false">AI / LLM</button>
-          <button class="chip" data-filter="backend" role="tab" aria-selected="false">Backend</button>
-          <button class="chip" data-filter="web" role="tab" aria-selected="false">Web</button>
-        </div>
       </div>
 
       <div class="grid" id="grid">
+
+        <article class="card card--featured" data-cat="web">
+          <div class="card-top">
+            <h3>TaskFlow</h3>
+            <span class="badge badge--live">full-stack</span>
+          </div>
+          <p>Сервис управления задачами: FastAPI на бэкенде, Vue 3 + TypeScript на фронте,
+             PostgreSQL, Docker Compose. Alembic-миграции, сессии, rate limiting,
+             CI на GitHub Actions, Selenium E2E и прод-деплой на Ubuntu + Caddy.</p>
+          <ul class="tags">
+            <li>FastAPI</li><li>Vue 3</li><li>TypeScript</li><li>PostgreSQL</li><li>Docker</li><li>CI</li>
+          </ul>
+          <a class="card-link" href="https://github.com/SanKdrv/todolist" target="_blank" rel="noopener">Открыть репозиторий →</a>
+        </article>
 
         <article class="card card--featured" data-cat="backend">
           <div class="card-top">
@@ -167,7 +279,15 @@
           <a class="card-link" href="https://github.com/SanKdrv/cardgen" target="_blank" rel="noopener">Открыть репозиторий →</a>
         </article>
 
-        <article class="card card--featured" data-cat="ai">
+      </div>
+
+      <details class="sub catalog">
+        <summary>
+          <span class="sub-title">Ещё 10 проектов</span>
+          <span class="sub-hint">пет-проекты, учебные и эксперименты</span>
+        </summary>
+        <div class="grid grid--compact">
+        <article class="card" data-cat="ai">
           <div class="card-top">
             <h3>hh-autoapply</h3>
             <span class="badge badge--live">open source</span>
@@ -285,57 +405,11 @@
              asyncio/aiogram для бота, участвовал в тестировании и защите продукта.</p>
           <ul class="tags"><li>Python</li><li>aiogram</li><li>SQLAlchemy</li><li>MySQL</li></ul>
         </article>
+        </div>
+      </details>
+
 
       </div>
-    </section>
-
-    <section class="experience" aria-labelledby="experience-title">
-      <h2 id="experience-title">Опыт работы</h2>
-      <p class="experience-lead">2 года 6 месяцев коммерческой разработки: от легаси-миграций до highload-сервисов в проде.</p>
-
-      <ol class="timeline">
-        <li class="job">
-          <div class="job-head">
-            <h3>Fullstack-разработчик</h3>
-            <span class="job-period">авг 2025 — июл 2026</span>
-          </div>
-          <p class="job-company">Shamrock Tech · 1 год</p>
-          <ul class="job-points">
-            <li>Разработал highload Go-микросервис сбора биржевых данных: WebSocket-потоки, батчи, protobuf, запись в NATS.</li>
-            <li>Развернул в проде NATS JetStream и ClickHouse: схема хранения, consumer-таблицы и материализованные представления для аналитики.</li>
-            <li>Написал Python-микросервис оркестрации процессов на кластере серверов: очередь задач, пул воркеров, управление по SSH.</li>
-          </ul>
-          <ul class="job-stack"><li>Go</li><li>Python</li><li>ClickHouse</li><li>NATS</li><li>protobuf</li></ul>
-        </li>
-
-        <li class="job">
-          <div class="job-head">
-            <h3>Программист-инженер 2 категории</h3>
-            <span class="job-period">июн 2024 — июн 2025</span>
-          </div>
-          <p class="job-company">Петрозаводский государственный университет · 1 год 1 месяц</p>
-          <ul class="job-points">
-            <li>Перенёс подсистемы с Oracle Forms 6i в веб — перевёл пользователей с устаревшего десктопного клиента на браузер.</li>
-            <li>Оптимизировал структуру таблиц и запросы Oracle, устранил коллизии данных.</li>
-            <li>Вёл полный цикл fullstack: backend на PHP (Yii2), frontend на JavaScript/jQuery/Bootstrap.</li>
-          </ul>
-          <ul class="job-stack"><li>PHP</li><li>Yii2</li><li>Oracle</li><li>JavaScript</li></ul>
-        </li>
-
-        <li class="job">
-          <div class="job-head">
-            <h3>Backend-разработчик</h3>
-            <span class="job-period">янв 2024 — июл 2024</span>
-          </div>
-          <p class="job-company">Intelektaz · 7 месяцев</p>
-          <ul class="job-points">
-            <li>Разработал и вывел в продакшен микросервис автоматических рассылок и генерации ИИ-постов во ВКонтакте.</li>
-            <li>Автоматизировал тарификацию через cron-джобы — убрал ручную выписку счетов.</li>
-            <li>Настроил Nginx (reverse proxy) на всех микросервисах, оформил API-документацию через Swagger.</li>
-          </ul>
-          <ul class="job-stack"><li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>Redis</li><li>Docker</li></ul>
-        </li>
-      </ol>
     </section>
 
     <section class="education" aria-labelledby="education-title">
